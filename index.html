@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoodlik Taxi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-white p-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+            </div>
+            <nav>   
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Bosh sahifa</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Haqida</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="static/pictures/user.png" alt="User" style="width: 29px; height: 29px;"> <!-- Adjust size as needed -->
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Kirish</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Haydovchi bo'lib ro'yxatdan o'tish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero d-flex justify-content-center align-items-center">
+        <div class="container text-light">
+            <h2 class="mb-4"><b>1 Daqiqa Ichida Taksi <br>Buyurtma Qiling!</b></h2>
+            <button class="btn btn-warning mb-4">Haydovchimisiz?</button>
+            
+                <!-- <div class="form-container"> --> 
+
+                <!-- <div class="container text-center text-light"> -->
+                    <div class="booking-form p-4 rounded shadow right-align">
+                        <h3 class="mb-4" style="color: #FFC918;">Manzilni tanlang</h3>
+                        <form action="#" class="row g-3">
+                            <div class="col-12">
+                                <!-- <label for="from" class="form-label">Qayerdan</label> -->  
+                                <input type="text" id="from" name="from" class="form-control" placeholder="Qayerdan">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" id="to" name="to" class="form-control" placeholder="Qayerga">
+                            </div>  
+                            <div class="col-12">
+                                <input type="date" id="date" name="date" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <input type="number" id="passengers" name="passengers" class="form-control" value="1" min="1">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-custom">Qidirish</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- </div> -->
+    </section>
+
+    <section class="about py-5 bg-light text-center">
+        <div class="container">
+            <h3 class="mb-4">Biz Haqimizda</h3>
+            <p class="lead">ZoodLik xizmatlaridan foydalanib vaqtingiz va pulingizni tejang. Istalgan viloyat, shahar va tumaningizga oson yetib oling. Saytdan yo'lovchi va haydovchi bo'lib ro'yxatdan o'tishingiz mumkin. Sizga foydamiz tegayotganidan mamnunmiz!</p>
+            <button class="btn btn-warning mt-4">Biz Bilan Bog'lanish</button>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-3 text-center">
+        <p>&copy; 2024 Copyright ZoodLik Group</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>

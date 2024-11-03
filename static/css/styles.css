@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img {
+    max-height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/*background-color: rgba(255, 0, 0, 0.5); /* Temporary red overlay for debugging */
+
+
+.nav-link {
+    color: black !important;
+}
+
+
+.hero {
+    background-image: url('../pictures/main_image.jpg'); /* Use the provided background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    height: 110vh;
+    display: flex;
+/*    justify-content: center;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+/*    align-items: center; /* Centers content vertically and horizontally */
+    padding-left: 40px; /* Move everything more to the left */
+    padding-top: 10px; /* Move everything down slightly */
+}
+
+
+.hero h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 45px;
+    max-width: 600px; /* Adjust width as needed */
+    margin: 0 auoto;
+    margin-top: 10px;
+/*    margin-left: 0px;*/
+/*    margin-right: 580px; /* Adjust this value to move it left */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.hero .btn-warning {
+    margin-top: 10px; /* Adjust this value to move it down */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*      background-color: rgba(0, 0, 0, 0.5); /* Add dark overlay for text readability */*/
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    text-align: left; /* Ensures content aligns to the left */
+    padding-left: 40px; /* Adjust to control left spacing */
+}
+
+
+/* Center alignment */
+.booking-form {
+    transform: translateX(-70px); /* Adjust to move left */
+    margin: 0;
+    background-color: rgba(81, 79, 72, 0.6);
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+/* Move form to the right */
+.booking-form.right-align {
+    margin-left: auto;
+    margin-right: 10px;}
+
+.booking-form .form-control {
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center-align within the form */
+}
+
+
+/* Button custom styles */
+.booking-form .btn-custom {
+    background-color: #FFC918; /* Change to your desired color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 6px 10px; /* Add padding */
+    border-radius: 5px; /* Round corners */
+    width: 64%; /* Match the button's width */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 18px;
+}
+
+.booking-form .btn-custom:hover {
+    background-color: #ffb300; /* Darker shade on hover */
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        height: 60vh;
+    }
+
+    .hero h2 {  
+        font-size: 1.8rem;
+    }
+
+    .booking-form {
+        width: 100%;
+    }
+
+    .about h3 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
