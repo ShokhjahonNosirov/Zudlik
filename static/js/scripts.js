@@ -4,3 +4,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     // Add custom validation or form submission code here
     alert('Taksi qidiruvni boshlaymiz!');
 });
+
+function updatePlaceholder(value) {
+    document.getElementById('dropdownMenuInput').placeholder = value;
+}
