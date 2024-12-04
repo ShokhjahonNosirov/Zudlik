@@ -1,4 +1,7 @@
-/* General Styling */
+/* This file contains reuseable stylings for componenets to be imported for example
+    header, footer and buttons */
+
+    /* General Styling */
 body {
     font-family: Arial, sans-serif;
     color: #333;
