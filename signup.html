@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: url('static/pictures/city-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-title {
+            font-weight: 700;
+            text-align: center;
+            color: #0046B8;
+            margin-bottom: 10px;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            height: 45px;
+            background: #28A745;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-submit:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="form-title">Haydovchi bo'lib ro'yxatdan o'ting</h3>
+        <p class="login-link">Akkountingiz bormi? <a href="#">Kirish</a></p>
+
+        <form>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" placeholder="Tug'ilgan yili">
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" placeholder="Moshina yili">
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="file" class="form-control" placeholder="Rasmingiz">
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" placeholder="Moshina raqam">
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" placeholder="Tajriba (staj)">
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="file" class="form-control" placeholder="Moshina rasm 1">
+                </div>
+                <div class="col-md-6 form-group">
+                    <select class="form-control">
+                        <option value="">Moshina rusumi</option>
+                        <option value="lacetti">Lacetti</option>
+                        <option value="cobalt">Cobalt</option>
+                        <option value="nexia">Nexia</option>
+                    </select>
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="file" class="form-control" placeholder="Moshina rasm 2">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-submit mt-3">Tasdiqlash</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
