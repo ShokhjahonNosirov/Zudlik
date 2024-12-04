@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img {
+    max-height: 50px;
+    /* Adjust the height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+/*background-color: rgba(255, 0, 0, 0.5); /* Temporary red overlay for debugging */
+
+.nav-link {
+    color: black !important;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 95px;
+    height: max-content;
+    background-image: url('../pictures/bg/car-bg.png');
+    height: 862px;
+}
+
+.driver-profile {
+    width: 460px;
+    height: 706px;
+    border: 2px solid #FFC918;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 43px 0;
+    background-color: white;
+}
+
+.driver-text {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.driver-text>span {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.picture-profile {
+    width: max-content;
+    height: 706px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.picture-frame {
+    width: 464px;
+    height: 275px;
+    border-radius: 1px solid #000;
+}
+
+.edit-button {
+    width: 191px;
+    border-radius: 15px;
+    background-color: #FFC918;
+    border: 2px solid #FFC918;
+    height: 63px;
+}
+
+.edit-button>img {
+    width: 25px;
+    height: 27px;
+    margin: -4px 0 0 0;
+}
+
+.edit-picture-button {
+    height: 63px;
+    width: 321px;
+    border-radius: 15px;
+    border: 2px solid #FFC918;
+    background-color: white;
+}
+
+.edit-picture-button>span {
+    color: #FFC918;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+
+footer {
+    background-color: #FFFFE8;
+    color: #8A8E8B;
+    /* padding-top: 65px; /* Custom top padding */
+    /*padding-bottom: 65px; Custom bottom padding */
+}
+
+footer .footer-brand {
+    font-family: 'Irish Grover', cursive; /* Apply the Irish Grover font */
+    font-size: 50px;
+    color: #4D5662;
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 95px;
+        height: max-content;
+        height: 862px;
+    }
+}
