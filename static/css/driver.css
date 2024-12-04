@@ -115,9 +115,18 @@ body {
 
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #FFFFE8;
+    color: #8A8E8B;
+    /* padding-top: 65px; /* Custom top padding */
+    /*padding-bottom: 65px; Custom bottom padding */
 }
+
+footer .footer-brand {
+    font-family: 'Irish Grover', cursive; /* Apply the Irish Grover font */
+    font-size: 50px;
+    color: #4D5662;
+}
+
 
 
 /* Responsive styling */
