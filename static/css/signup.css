@@ -1,0 +1,64 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('static/pictures/city-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+    font-weight: 700;
+    text-align: center;
+    color: #0046B8;
+    margin-bottom: 10px;
+}
+
+.login-link {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 45px;
+    background: #28A745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-submit:hover {
+    background: #218838;
+}
