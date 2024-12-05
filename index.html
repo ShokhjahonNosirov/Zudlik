@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,7 @@
     <title>Zoodlik Taxi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
@@ -18,7 +16,9 @@
     <header class="bg-white p-4 py-3 shadow-sm custom-header">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+                <a href="index.html">
+                    <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+                </a>
             </div>
             <nav>
                 <ul class="nav">
@@ -57,118 +57,222 @@
                         <form action="#" class="row g-3">
                             <div class="col-12">
                                 <div class="dropdown">
-                                    <input class="form-control dropdown-toggle" type="text" id="dropdownMenuInput" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Qayerdan">
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuInput">
-                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('City A')">Toshkent sh</a></li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Samarqand</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Samarqand sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Urgut</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Past Darg'om</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 4')">Mirbozor</a></li>
-                                            </ul>
-                                        </li>
-
-
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Farg'ona</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Farg'ona sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Qo'qon</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Marg'ilon</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 4')">Beshariq</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Qashqadaryo</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Qarshi sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Chiroqchi</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Kitob</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 4')">Yakkabog'</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Andijon</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Andijon sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Asaka</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Shahrixon</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 4')">Marhamat</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Namangan</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Namangan sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Chust</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Kosonsoy</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 4')">Pop</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Surxandaryo</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Termiz sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Denov</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Boysun</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Buxoro</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Buxoro sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Olot</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Qoraqalpog'iston</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Nukus sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Mo'ynoq</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Xorazm</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Urganch sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Xiva</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Hazorasp</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Jizzax</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Jizzax sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Zomin</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Baxmal</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 4')">G'allaorol</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Navoiy</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Navoiy sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Uchquduq</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 3')">Zarafshon</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 4')">Qiziltepa</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Sirdaryo</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 1')">Guliston sh</a></li>
-                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('District 2')">Yangiyer</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <input class="form-control dropdown-toggle" type="text" id="dropdownMenuInputFrom" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Qayerdan">
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuInputFrom">
+                                            <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Toshkent sh')">Toshkent sh</a></li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Samarqand</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Samarqand sh')">Samarqand sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Urgut')">Urgut</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Past Darg`om')">Past Darg'om</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Mirbozor')">Mirbozor</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Farg'ona</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Farg`ona sh')">Farg'ona sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Qo`qon')">Qo'qon</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Marg`ilon')">Marg'ilon</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Beshariq')">Beshariq</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Qashqadaryo</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Qarshi sh')">Qarshi sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Chiroqchi')">Chiroqchi</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Kitob')">Kitob</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Yakkabog')">Yakkabog'</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Andijon</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Andijon sh')">Andijon sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Asaka')">Asaka</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Shahrixon')">Shahrixon</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Marhamat')">Marhamat</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Namangan</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Namangan sh')">Namangan sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Chust')">Chust</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Kosonsoy')">Kosonsoy</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Pop')">Pop</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Surxandaryo</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Termiz sh')">Termiz sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Denov')">Denov</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Boysun')">Boysun</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Buxoro</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Buxoro sh')">Buxoro sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Olot')">Olot</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Qoraqalpog'iston</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Nukus sh')">Nukus sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Mo`ynoq')">Mo'ynoq</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Xorazm</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Urganch sh')">Urganch sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Xiva')">Xiva</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Hazorasp')">Hazorasp</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Jizzax</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Jizzax sh')">Jizzax sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Zomin')">Zomin</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Baxmal')">Baxmal</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'G`allaorol')">G'allaorol</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Navoiy</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Navoiy sh')">Navoiy sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Uchquduq')">Uchquduq</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Zarafshon')">Zarafshon</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Qiziltepa')">Qiziltepa</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Sirdaryo</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Guliston sh')">Guliston sh</a></li>
+                                                    <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputFrom', 'Yangiyer')">Yangiyer</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <input type="text" id="to" name="to" class="form-control" placeholder="Qayerga">
+
+                                <div class="col-12">
+                                    <div class="dropdown">
+                                        <input class="form-control dropdown-toggle" type="text" id="dropdownMenuInputTo" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Qayerga">
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuInputTo">
+                                                <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Toshkent sh')">Toshkent sh</a></li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Samarqand</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Samarqand sh')">Samarqand sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Urgut')">Urgut</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Past Darg`om')">Past Darg'om</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Mirbozor')">Mirbozor</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Farg'ona</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Farg`ona sh')">Farg'ona sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Qo`qon')">Qo'qon</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Marg`ilon')">Marg'ilon</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Beshariq')">Beshariq</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Qashqadaryo</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Qarshi sh')">Qarshi sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Chiroqchi')">Chiroqchi</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Kitob')">Kitob</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Yakkabog')">Yakkabog'</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Andijon</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Andijon sh')">Andijon sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Asaka')">Asaka</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Shahrixon')">Shahrixon</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Marhamat')">Marhamat</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Namangan</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Namangan sh')">Namangan sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Chust')">Chust</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Kosonsoy')">Kosonsoy</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Pop')">Pop</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Surxandaryo</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Termiz sh')">Termiz sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Denov')">Denov</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Boysun')">Boysun</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Buxoro</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Buxoro sh')">Buxoro sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Olot')">Olot</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Qoraqalpog'iston</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Nukus sh')">Nukus sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Mo`ynoq')">Mo'ynoq</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Xorazm</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Urganch sh')">Urganch sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Xiva')">Xiva</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Hazorasp')">Hazorasp</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Jizzax</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Jizzax sh')">Jizzax sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Zomin')">Zomin</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Baxmal')">Baxmal</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'G`allaorol')">G'allaorol</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Navoiy</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Navoiy sh')">Navoiy sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Uchquduq')">Uchquduq</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Zarafshon')">Zarafshon</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Qiziltepa')">Qiziltepa</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="dropdown-item dropdown-toggle" href="#">Sirdaryo</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Guliston sh')">Guliston sh</a></li>
+                                                        <li><a class="dropdown-item" href="#" onclick="updatePlaceholder('dropdownMenuInputTo', 'Yangiyer')">Yangiyer</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                </div>
                             </div>  
+
                             <div class="col-12">
                                 <input type="date" id="date" name="date" class="form-control">
                             </div>
@@ -176,7 +280,7 @@
                                 <input type="number" id="passengers" name="passengers" class="form-control" value="1" min="1">
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-custom">Qidirish</button>
+                                <button type="button" class="btn btn-custom" onclick="window.location.href='result.html';">Qidirish</button>
                             </div>
                         </form>
                     </div>
@@ -235,5 +339,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/scripts.js"></script>
+
 </body>
 </html>
