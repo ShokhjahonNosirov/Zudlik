@@ -1,4 +1,3 @@
-
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
@@ -7,7 +6,7 @@ body {
     padding: 0;
 }
 
-.form-control{
+.form-control {
     border: none;
     background-color: white;
     color: #28669F;
@@ -16,7 +15,8 @@ body {
     height: 42px;
     border: 1px solid #787878;
 }
-.form-control:focus{
+
+.form-control:focus {
     border: none;
     background-color: white;
     color: #28669F;
@@ -25,37 +25,38 @@ body {
     height: 42px;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color: #28669F;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    justify-content: start ;
+    justify-content: start;
     height: max-content;
     background-image: url('../pictures/bg/car-bg.png');
-    height: 862px;
+    min-height: 862px;
     padding-top: 81px;
     margin: 0 auto;
-    width:  100%;
-
+    width: 100%;
+    padding-bottom: 30px;
 }
 
-form{
+form {
     margin: 0 auto;
-    
+
 }
 
-.form-title{
+.form-title {
     font-weight: 600;
     font-size: 35px;
     width: 100%;
     text-align: center;
     color: #1550BF;
+    margin-bottom: 80px;
 }
 
-.login-link{
+.login-link {
     font-weight: 400;
     font-size: 25px;
     width: 100%;
@@ -63,13 +64,14 @@ form{
     color: #000;
     margin-bottom: 82px;
 }
-.form-group{
+
+.form-group {
     width: max-content;
-    gap:200px;
+    gap: 200px;
     margin-bottom: 29px;
 }
 
-.row{
+.row {
     width: max-content;
     display: flex;
     flex-direction: row;
@@ -91,13 +93,25 @@ form{
     border: none;
 }
 
-.btn-accept:hover{
+.btn-accept:hover {
     border: 2px solid #3DD46B;
     background: white;
     color: #3DD46B;
     margin: 0 auto;
 }
 
-label{
+label {
     color: #4C4C4C;
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 20px;
+        gap: 40px;
+    }
 }

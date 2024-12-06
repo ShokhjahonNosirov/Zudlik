@@ -46,16 +46,23 @@
 
         <form>
             <div class="row form-group">
-                <input type="text" class="form-control" placeholder="Qayerdan">
-                <input type="text" class="form-control" placeholder="Bo'sh o'rinlar soni">
+                <div style="width: min-content; height: max-content">
+                    <input type="text" class="form-control" placeholder="Qayerdan">
+
+                </div>
+                <div style="width: min-content; height: min-content">
+                    <input type="text" class="form-control" placeholder="Bo'sh o'rinlar soni">
+
+                </div>
             </div>
 
             <div class="row form-group">
-                <div style="width: max-content; height: max-content">
+                <div style="width: min-content; height: min-content">
+                    <label> </label>
                     <input type="text" class="form-control" placeholder="Jo'nash manzili">
-                    <label>* Misol: Sobir Rahimov</label>
+                    <label style="position: absolute;">* Misol: Sobir Rahimov</label>
                 </div>
-                <div style="width: max-content; height: max-content">
+                <div style="width: min-content; height: min-content">
 
                     <label>Sana</label>
                     <input type="date" class="form-control">
@@ -63,27 +70,28 @@
             </div>
 
             <div class="row form-group">
-                <div class="col-md-6">
-                    <label>Qayerga</label>
+                <div class="col" style="width: min-content; height: min-content;">
+                    <label> </label>
                     <select class="form-control">
                         <option value="">Qayerga</option>
                         <!-- Add location options -->
                     </select>
                 </div>
-                <div class="col-md-6">
+                <div class="col" style="width: min-content; height: min-content;">
                     <label>Vaqt</label>
                     <input type="time" class="form-control">
                 </div>
             </div>
 
             <div class="row form-group">
-                <div class="col-md-6">
-                    <label>Borish manzili</label>
-                    <input type="text" class="form-control" placeholder="* Misol: Navoiy avto turargoh">
+                <div class="col" style="width: min-content; height: min-content;">
+                    <label> </label>
+                    <input type="text" class="form-control" placeholder="Borish manzili">
+                    <label>* Misol: Navoiy avto turargoh</label>
                 </div>
-                <div class="col-md-6">
-                    <label>Narx</label>
-                    <input type="text" class="form-control" placeholder="70 000">
+                <div class="col" style="width: min-content; height: min-content;">
+                    <label> </label>
+                    <input type="text" class="form-control" placeholder="Narx">
                 </div>
             </div>
 
