@@ -214,8 +214,7 @@ body {
 
     .main-content {
         grid-template-columns: repeat(1, 1fr);
-        padding: 12px;
-        padding-top: 60px;
+        padding: 60px 12px;
     }
 
     .action-buttons {
