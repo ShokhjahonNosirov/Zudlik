@@ -26,7 +26,8 @@ body {
     gap: 95px;
     height: max-content;
     background-image: url('../pictures/bg/car-bg.png');
-    height: 862px;
+    min-height: 862px;
+    padding-bottom: 30px;
 }
 
 .driver-profile {
@@ -137,6 +138,9 @@ footer .footer-brand {
         justify-content: center;
         gap: 95px;
         height: max-content;
-        height: 862px;
+        min-height: 862px;
+        padding-bottom: 30px;
+        width: 100%;
+        overflow-x: hidden;
     }
 }

@@ -16,7 +16,8 @@ body {
 
 .main-content{
     background-image: url('../pictures/bg/car-bg.png');
-    height: 862px;
+    min-height: 862px;
+    padding-bottom: 30px;
 }
 
 /* Header */
