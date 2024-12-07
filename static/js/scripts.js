@@ -5,6 +5,11 @@ document.querySelector('form').addEventListener('submit', function(event) {
     alert('Taksi qidiruvni boshlaymiz!');
 });
 
-function updatePlaceholder(value) {
-    document.getElementById('dropdownMenuInput').placeholder = value;
+// function updatePlaceholder(value) {
+//     document.getElementById('dropdownMenuInputFrom').placeholder = value;
+// }
+
+
+function updatePlaceholder(inputId, value) {
+    document.getElementById(inputId).value = value;
 }
