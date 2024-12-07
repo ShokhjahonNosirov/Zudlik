@@ -137,8 +137,42 @@ h1 {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
-/* Responsive Styling */
 
+.driver-name, .time, .price {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.driver-name .applied-rating{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btn-accept {
+    background-color: #3DD46B;
+    color: white;
+    border: none;
+}
+
+.btn-accept:hover {
+    border: 2px solid #3DD46B;
+    background: white;
+    color: #3DD46B;
+    margin: 0 auto;
+}
+
+.btn-cancel {
+    background-color: white;
+    border: 2px solid #f44336;
+    color: #f44336;
+}
+
+.btn-cancel:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Responsive Styling */
 @media (max-width: 767px) {
     .card-custom {
         flex-direction: column;
@@ -163,9 +197,13 @@ h1 {
     }
 
     .driver-name, .time, .price {
+        font-weight: 600;
         font-size: 1rem;
     }
-
+    .driver-name .applied-rating{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
     .btn-custom {
         padding: 6px 12px;
         font-size: 0.9rem;
@@ -194,6 +232,12 @@ h1 {
     }
 
     .driver-name, .time, .price {
+        font-weight: 300;
         font-size: 1.1rem;
+    }
+
+    .driver-name .applied-rating{
+        font-size: 0.9rem;
+        font-weight: 300;
     }
 }
