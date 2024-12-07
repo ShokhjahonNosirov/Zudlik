@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+.container{
+    max-width: 2000px;
+}
+
 .form-control {
     border: none;
     background-color: white;
