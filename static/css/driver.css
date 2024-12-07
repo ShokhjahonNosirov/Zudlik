@@ -58,6 +58,7 @@ body {
     font-size: 26px;
 }
 
+
 .picture-profile {
     width: max-content;
     height: 706px;
@@ -123,7 +124,8 @@ footer {
 }
 
 footer .footer-brand {
-    font-family: 'Irish Grover', cursive; /* Apply the Irish Grover font */
+    font-family: 'Irish Grover', cursive;
+    /* Apply the Irish Grover font */
     font-size: 50px;
     color: #4D5662;
 }
@@ -142,5 +144,37 @@ footer .footer-brand {
         padding-bottom: 30px;
         width: 100%;
         overflow-x: hidden;
+    }
+
+    .driver-profile {
+        width: 100%;
+        height: max-content;
+        border: 2px solid #FFC918;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 43px 0;
+        background-color: white;
+    }
+
+
+    .driver-text>span {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .picture-profile{
+        width: 100%;
+        padding: 0 8px;
+    }
+    .picture-profile > img{
+        width: 100%;
+
+    }
+    .edit-picture-button{
+        width: 100%;
     }
 }
