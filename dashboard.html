@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Quote</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/dashboard.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white p-4 py-3 shadow-sm custom-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Bosh sahifa</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Haqida</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="static/pictures/user.png" alt="User" style="width: 35px; height: 35px;">
+                            <!-- Adjust size as needed -->
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Kirish</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Haydovchi bo'lib ro'yxatdan o'tish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <section class="main-content">
+        <div class="left-content">
+            <div class="earnings-card">
+                <h2>Daromad</h2>
+                <div class="amount">750 000 so'm</div>
+            </div>
+            <div class="history-profile">
+                <h2 class="title">Mijozlar tarixi</h2>
+                <ul style="position: relative;">
+                    <li><span class="history-rating">⭐ 4.8 </span>B.N 20-iyun 18:00 <span><a
+                                href="">Baholash</a></span></li>
+                    <li><span class="history-rating">⭐ 4.8 </span>B.N 20-iyun 18:00 <span><a
+                                href="">
+                            <img style="width: 25px; height: 25px;" src="static/pictures/dashboard/tick-icon.svg" alt="" srcset=""></a></span></li>
+                    <li><span class="history-rating"></span>B.N 20-iyun 18:00 <span><a
+                                href=""></a></span></li>
+                    <li><span class="history-rating"></span>B.N 20-iyun 18:00 <span><a
+                                href=""></a></span></li>
+                    <li><span class="history-rating"></span>B.N 20-iyun 18:00 <span><a
+                                href=""></a></span></li>
+                    <li><span class="history-rating"></span>B.N 20-iyun 18:00 <span><a
+                                href=""></a></span></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="right-content">
+
+            <div class="container">
+                <div class="chat-icon" style="width: 100%; display: flex; flex-direction: row; justify-content: flex-end;">
+                    <img src="static/pictures/dashboard/chat-icon.png" style="width: 75px; height: 75px; margin-left: auto;" alt="chat" >
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-create">
+                        <i class="fas fa-plus plus-icon"></i> Taklif Yaratish
+                    </button>
+                </div>
+
+                <h2 class="section-title">Faol Takliflar (2)</h2>
+
+                <!-- Card 1 -->
+                <div class="card-custom mt-5 d-flex align-items-center justify-content-between">
+                    <!-- Column 1: Driver Name and Car -->
+                    <div class="column-1 d-flex flex-column">
+                        <div class="time">10:00</div>
+                    </div>
+
+                    <!-- Column 1: Price Info -->
+                    <div class="column-4 d-flex flex-column text-center">
+                        <div class="price">80.000 so'm</div>
+                        <div>3 kishi</div>
+                    </div>
+
+                    <!-- Column 5: Locations -->
+                    <div class="column-5 d-flex flex-column location-block ">
+                        <div>
+                            <image src="static/pictures/result/pin-icon.svg" alt="Location"
+                                style="width: 15px; height: 15px;">
+                                Toshkent sh. Sobir Rahimov
+                        </div>
+                        <image src="static/pictures/result/dot-icon.svg" alt="Location"
+                            style="width: 15px; height: 15px;"/>
+                            <div>
+                                <image src="static/pictures/result/arrow-icon.svg" alt="Location"
+                                    style="width: 15px; height: 15px;">
+                                    Navoiy sh. Karmana stoyanka
+                            </div>
+                    </div>
+
+                    
+                    <div class="">
+                        <img src="static/pictures/dashboard/edit-icon.svg" style="width: 25px; height: 25px;" alt="">
+                      </div>
+                </div>
+
+                <!-- Card 2-->
+                <div class="card-custom mt-5 d-flex align-items-center justify-content-between">
+                    <!-- Column 1: Driver Name and Car -->
+                    <div class="column-1 d-flex flex-column">
+                        <div class="time">10:00</div>
+                    </div>
+
+                    <!-- Column 1: Price Info -->
+                    <div class="column-4 d-flex flex-column text-center">
+                        <div class="price">80.000 so'm</div>
+                        <div>3 kishi</div>
+                    </div>
+
+                    <!-- Column 5: Locations -->
+                    <div class="column-5 d-flex flex-column location-block">
+                        <div>
+                            <image src="static/pictures/result/pin-icon.svg" alt="Location"
+                                style="width: 15px; height: 15px;">
+                                Toshkent sh. Sobir Rahimov
+                        </div>
+                        <image src="static/pictures/result/dot-icon.svg" alt="Location"
+                            style="width: 15px; height: 15px;">
+                            <div>
+                                <image src="static/pictures/result/arrow-icon.svg" alt="Location"
+                                    style="width: 15px; height: 15px;">
+                                    Navoiy sh. Karmana stoyanka
+                            </div>
+                    </div>
+
+                    <div class="">
+                      <img src="static/pictures/dashboard/edit-icon.svg" style="width: 25px; height: 25px;" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Card 3-->
+                <div class="active-card card-custom mt-5 d-flex align-items-center justify-content-between">
+                    <!-- Column 1: Driver Name and Car -->
+                    <div class="column-1 d-flex flex-column">
+                        <div class="time">10:00</div>
+                    </div>
+
+                    <!-- Column 1: Price Info -->
+                    <div class="column-4 d-flex flex-column text-center">
+                        <div class="price">80.000 so'm</div>
+                        <div>3 kishi</div>
+                    </div>
+
+                    <!-- Column 5: Locations -->
+                    <div class="column-5 d-flex flex-column location-block">
+                        <div>
+                            <image src="static/pictures/result/pin-icon.svg" alt="Location"
+                                style="width: 15px; height: 15px;">
+                                Toshkent sh. Sobir Rahimov
+                        </div>
+                        <image src="static/pictures/result/dot-icon.svg" alt="Location"
+                            style="width: 15px; height: 15px;">
+                            <div>
+                                <image src="static/pictures/result/arrow-icon.svg" alt="Location"
+                                    style="width: 15px; height: 15px;">
+                                    Navoiy sh. Karmana stoyanka
+                            </div>
+                    </div>
+
+                    
+                    <div class="">
+                        <img src="static/pictures/dashboard/edit-icon.svg" style="width: 25px; height: 25px;" alt="">
+                      </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-5">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-md-4 location-block">
+                    <span class="footer-brand">ZudLik</span>
+                </div> -->
+            <div class="text-center">
+                <div class="footer-icons">
+                    <p>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </p>
+                </div>
+                &copy; 2024 Copyright ZudLik Group
+            </div>
+            <!-- <div class="col-md-4 text-right">
+                </div> -->
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/order.js"></script>
+</body>
+
+</html>

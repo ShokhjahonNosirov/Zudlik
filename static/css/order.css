@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -245,7 +245,9 @@ h1 {
     transform: scale(1.3); /* Slightly larger animation for selected stars */
   }
   
-  
+  .column-5{
+    padding: 0 40px;
+  }
 /* Pagination */
 .pagination {
     display: flex;
