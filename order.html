@@ -47,10 +47,50 @@
             </div>
         </header>
 
+        <!-- Empty Div For Pre Margin -->
         <div class="start-page container ">
-
         </div>
 
+        <!-- Bekor Qilish Modal -->
+        <div id="bekor-qilish-modal" class="kirish-modal">
+            <div class="bekor-qilish-modal-content">
+                <a href="#" class="close-btn">
+                    &times;
+                    <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+                </a>
+                <h2>Bekor qilish sababini kiriting:</h2>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+                <span class="modal-sub-text">* Sababsiz 1 haftada 5 ta bekor qilsangiz akkount 1 kunga
+                    bloklanadi.</span>
+                <div class="modal-button-group">
+                    <button class="btn modal-btn-cancel modal-btn-custom">Ortga
+                    </button>
+                    <button class="btn modal-btn-accept modal-btn-custom">Tasdiqlang</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rating Modal -->
+        <div id="rating-modal" class="rating-modal">
+            <div class="rating-modal-content">
+                <a href="#" class="close-btn">
+                    &times;
+                    <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+                </a>
+                <h2>Iltimos baholang</h2>
+                <div class="rating-images">
+                    <img width="45" height="45" src="static/pictures/order/filled-star.svg" />
+                    <img width="45" height="45" src="static/pictures/order/filled-star.svg" />
+                    <img width="45" height="45" src="static/pictures/order/filled-star.svg" />
+                    <img width="45" height="45" src="static/pictures/order/outline-star.svg" />
+                    <img width="45" height="45" src="static/pictures/order/outline-star.svg" />
+                </div>
+                <button class="btn-baholash">Baholash</button>
+            </div>
+        </div>
+
+
+        <!-- Main Content -->
         <div class="container mt-5">
             <h1 class="order-title">Faol buyurtma:</h1>
             <span class="results-count">
@@ -104,7 +144,11 @@
                 </div>
 
                 <!-- Join Button -->
-                <button class="btn btn-cancel btn-custom">Bekor qilish</button>
+                <a href="#bekor-qilish-modal">
+                    <button class="btn btn-cancel btn-custom">
+                        Bekor qilish
+                    </button>
+                </a>
 
             </div>
 
@@ -161,7 +205,11 @@
                 </div>
 
                 <!-- Join Button -->
-                <button class="btn btn-cancel btn-custom">Bekor qilish</button>
+                <a href="#bekor-qilish-modal">
+                    <button class="btn btn-cancel btn-custom">
+                        Bekor qilish
+                    </button>
+                </a>
             </div>
 
             <h1 class="order-title">Buyurtmalar tarixi:</h1>
@@ -214,7 +262,7 @@
                         </div>
                 </div>
 
-                <div>
+                <div class="rating-images">
                     <img src="static/pictures/order/filled-star.svg" />
                     <img src="static/pictures/order/filled-star.svg" />
                     <img src="static/pictures/order/filled-star.svg" />
@@ -222,7 +270,11 @@
                     <img src="static/pictures/order/outline-star.svg" />
                 </div>
 
-                <button class="btn-baholash">Baholash</button>
+                <a href="#rating-modal">
+                    <button class="btn-baholash">
+                        Baholash
+                    </button>
+                </a>
             </div>
 
             <!-- Card 5-->
@@ -276,7 +328,9 @@
                     <img src="static/pictures/order/outline-star.svg" />
                     <img src="static/pictures/order/outline-star.svg" />
                 </div>
-                <button class="btn-baholash">Baholash</button>
+                <a href="#rating-modal">
+                    <button class="btn-baholash">Baholash</button>
+                </a>
             </div>
 
             <!-- Card 6-->
@@ -330,7 +384,9 @@
                     <img src="static/pictures/order/outline-star.svg" />
                     <img src="static/pictures/order/outline-star.svg" />
                 </div>
-                <button class="btn-baholash">Baholash</button>
+                <a href="#rating-modal">
+                    <button class="btn-baholash">Baholash</button>
+                </a>
             </div>
         </div>
 
