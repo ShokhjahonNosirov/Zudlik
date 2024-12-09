@@ -212,9 +212,9 @@ h1 {
 
 .page-btn.active,
 .page-btn:hover {
-    background-color: #3DD46B;
+    background-color: #FFC918;
     color: #fff;
-    border-color: #3DD46B;
+    border-color: #FFC918;
 }
 
 /* Responsive Styling */
