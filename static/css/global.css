@@ -377,6 +377,9 @@ body {
 
 
 footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     background-color: #FFFFE8;
     color: #8A8E8B;
     /* padding-top: 65px; /* Custom top padding */
@@ -704,5 +707,52 @@ div.input-container  {
         font-size: 16px;
         width: 100%;
         /* max-width: 200px; */
+    }
+
+      /* Hide the default nav menu and display a toggle button */
+      nav .nav {
+        display: none; /* Initially hide the navigation menu */
+        flex-direction: column; /* Stack items vertically */
+        background-color: white; /* Background color for the dropdown menu */
+        position: absolute; /* Overlay the menu on top of content */
+        top: 60px; /* Adjust based on header height */
+        right: 10px;
+        width: 200px; /* Menu width */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
+        border-radius: 8px; /* Optional: rounded corners */
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+    nav .nav-item {
+        margin: 0; /* Remove any margin for stacked layout */
+        padding: 10px 15px;
+        text-align: left;
+        border-bottom: 1px solid #eaeaea; /* Optional: separate menu items */
+    }
+
+    nav .nav-item:last-child {
+        border-bottom: none; /* Remove the border for the last item */
+    }
+
+    /* Show menu when toggle class is active */
+    nav.active .nav {
+        display: flex; /* Show the menu when active */
+    }
+
+    /* Add a menu toggle button */
+    .menu-toggle {
+        display: block; /* Show the toggle button */
+        background: none;
+        border: none;
+        font-size: 1.5rem; /* Size of the hamburger icon */
+        cursor: pointer;
+        margin-left: auto; /* Push it to the right */
+    }
+
+    /* Align header elements vertically */
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

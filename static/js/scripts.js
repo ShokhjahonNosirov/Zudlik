@@ -13,3 +13,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
 function updatePlaceholder(inputId, value) {
     document.getElementById(inputId).value = value;
 }
+
+
+// Get the toggle button and nav menu
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav");
+
+// Toggle the menu visibility
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});

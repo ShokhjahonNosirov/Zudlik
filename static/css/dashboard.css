@@ -264,4 +264,103 @@ body {
         position: absolute;
         left: 0px;
     }
+
+    .right-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        font-size: 14px; /* Adjust text size for smaller screens */
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        grid-template-columns: none; /* Stack the content vertically */
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .history-profile {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .history-profile .title {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .history-profile li {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .history-rating {
+        left: -38px;
+        font-size: 14px;
+    }
+
+    .earnings-card {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .earnings-card h2,
+    .earnings-card div {
+        font-size: 18px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn-create {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .card-section {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .card-custom {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .chat-icon {
+        margin: 10px 0;
+    }
+
+    .right-content .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .history-profile ul {
+        padding-left: 0;
+    }
 }
