@@ -13,10 +13,13 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="bg-white p-4 py-3 shadow-sm custom-header">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+                <a href="index.html">
+                    <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+                </a>
             </div>
             <nav>
                 <ul class="nav">
@@ -29,15 +32,30 @@
                             <!-- Adjust size as needed -->
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Kirish</a></li>
+                            <li><a class="dropdown-item modal-link" href="#kirish-modal">Kirish</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Haydovchi bo'lib ro'yxatdan o'tish</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Haydovchi bo'lib ro'yxatdan o'tish</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
+        </div>
+
+        <!-- Modal -->
+        <div id="kirish-modal" class="kirish-modal">
+            <div class="kirish-modal-content">
+                <a href="#" class="close-btn">
+                    &times;
+                    <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+                </a>
+                <h2>Shu taklif bilan davom etasizmi ?</h2>
+                <div class="modal-button-group">
+                    <button class="btn btn-cancel btn-custom">Davom etish</button>
+                    <button class="btn btn-accept btn-custom">Bekor qilish</button>
+                </div>
+            </div>
         </div>
     </header>
 
