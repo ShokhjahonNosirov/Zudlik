@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/global.css">
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
@@ -48,11 +49,117 @@
                     &times;
                     <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
                 </a>
-                <h2>Shu taklif bilan davom etasizmi ?</h2>
-                <div class="modal-button-group">
-                    <button class="btn btn-cancel btn-custom">Davom etish</button>
-                    <button class="btn btn-accept btn-custom">Bekor qilish</button>
-                </div>
+                <h1>Kirish</h1>
+                <h2>Akkountingiz yo’qmi ? <a href="#royxatdon-modal">Ro’yxatdan o’tish</a></h2>
+                <!-- form -->
+                <form class="modal-form">
+                    <div class="input-group">
+
+                        <label for="phone">*telefon raqam</label>
+                        <div class="input-container">
+                            <span>+998</span>
+                            <input type="text" id="phone" placeholder="">
+                        </div>
+                    </div>
+                    <div class="input-group">
+
+                        <label for="parol">*parol</label>
+                        <div class="input-container">
+                            <input type="text" id="palor" placeholder="">
+                        </div>
+                    </div>
+                    <button class="modal-button">Kirish</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div id="royxatdon-modal" class="kirish-modal">
+            <div class="kirish-modal-content">
+                <a href="#" class="close-btn">
+                    &times;
+                    <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+                </a>
+                <h1>Ro’yxatdan o’tish</h1>
+                <h2>Akkountingiz bormi ?<a href="#kirish-modal">Kirish</a></h2>
+                <!-- form -->
+                <form class="modal-form">
+                    <div class="input-group">
+                        <label for="phone">*telefon raqam</label>
+                        <div class="input-container">
+                            <span>+998</span>
+                            <input type="text" id="phone" placeholder="Enter phone number">
+                        </div>
+                    </div>
+                    <a class="modal-button" href="#tasdiqlash-modal">
+                        Davom etish
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <div id="tasdiqlash-modal" class="kirish-modal">
+            <div class="kirish-modal-content">
+                <a href="#" class="close-btn">
+                    &times;
+                    <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+                </a>
+                <h1>Tasdiqlash kodini kiriting</h1>
+                <!-- form -->
+                <form class="modal-form">
+                    <div class="input-group">
+
+                        <div class="input-container">
+                            <input type="password" id="passcode" placeholder="">
+                        </div>
+                        
+                    </div>
+                    <a href="#last-modal" class="modal-button">Tasdiqlash</a>
+                </form>
+            </div>
+        </div>
+        
+        <div id="last-modal" class="kirish-modal">
+            <div class="kirish-modal-content">
+                <a href="#" class="close-btn">
+                    &times;
+                </a>
+                <h1>Ro’yxatdan o’tish</h1>
+                <!-- form -->
+                <form class="modal-form">
+                    <div class="input-group">
+
+                        <div class="input-group">
+
+                            <label for="phone">*Ismingiz</label>
+                            <div class="input-container">
+                                <input type="text" id="palor" placeholder="">
+                            </div>
+                        </div>
+                        <div class="input-group">
+    
+                            <label for="parol">*Familiyangiz</label>
+                            <div class="input-container">
+                                <input type="text" id="palor" placeholder="">
+                            </div>
+                        </div>
+                        <div class="input-group">
+
+                            <label for="phone">*Parol</label>
+                            <div class="input-container">
+                                <input type="text" id="palor" placeholder="">
+                            </div>
+                        </div>
+                        <div class="input-group">
+    
+                            <label for="parol">*Parolni tasdiqlang</label>
+                            <div class="input-container">
+                                <input type="text" id="palor" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-button">Yakunlash</button>
+                </form>
             </div>
         </div>
     </header>
