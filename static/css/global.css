@@ -669,12 +669,18 @@ div.input-container  {
 
 
 
-
+.menu-toggle{
+    display: none;
+}
 
 
 
 /* Responsive styling */
 @media (max-width: 768px) {
+    .menu-toggle{
+        display: block;
+    }
+
     .hero {
         background-size: cover;
         height: 60vh;

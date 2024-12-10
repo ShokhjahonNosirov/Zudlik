@@ -18,157 +18,157 @@
   <!-- Header -->
   <header class="bg-white p-4 py-3 shadow-sm custom-header">
     <div class="container d-flex justify-content-between align-items-center">
-        <div class="logo">
-            <a href="index.html">
-                <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+      <div class="logo">
+        <a href="index.html">
+          <img src="static/pictures/logo.png" alt="ZoodLik Logo" class="logo-img">
+        </a>
+      </div>
+      <!-- Toggle Button for Mobile Screens -->
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        &#9776; <!-- Unicode character for a hamburger menu -->
+      </button>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Bosh sahifa</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Haqida</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="static/pictures/user.png" alt="User" style="width: 35px; height: 35px;">
             </a>
-        </div>
-        <!-- Toggle Button for Mobile Screens -->
-        <button class="menu-toggle" aria-label="Toggle navigation">
-            &#9776; <!-- Unicode character for a hamburger menu -->
-        </button>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link">Bosh sahifa</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Haqida</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="static/pictures/user.png" alt="User" style="width: 35px; height: 35px;">
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item modal-link" href="#kirish-modal">Kirish</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="signup.html">Haydovchi bo'lib ro'yxatdan o'tish</a></li>
-                    </ul>
-                </li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item modal-link" href="#kirish-modal">Kirish</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="signup.html">Haydovchi bo'lib ro'yxatdan o'tish</a></li>
             </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-       <!-- Modal -->
-       <div id="kirish-modal" class="kirish-modal">
-        <div class="kirish-modal-content">
-            <a href="#" class="close-btn">
-                &times;
-                <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
-            </a>
-            <h1>Kirish</h1>
-            <h2>Akkountingiz yo’qmi ? <a href="#royxatdon-modal">Ro’yxatdan o’tish</a></h2>
-            <!-- form -->
-            <form class="modal-form">
-                <div class="input-group">
+    <!-- Modal -->
+    <div id="kirish-modal" class="kirish-modal">
+      <div class="kirish-modal-content">
+        <a href="#" class="close-btn">
+          &times;
+          <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+        </a>
+        <h1>Kirish</h1>
+        <h2>Akkountingiz yo’qmi ? <a href="#royxatdon-modal">Ro’yxatdan o’tish</a></h2>
+        <!-- form -->
+        <form class="modal-form">
+          <div class="input-group">
 
-                    <label for="phone">*telefon raqam</label>
-                    <div class="input-container">
-                        <span>+998</span>
-                        <input type="text" id="phone" placeholder="">
-                    </div>
-                </div>
-                <div class="input-group">
+            <label for="phone">*telefon raqam</label>
+            <div class="input-container">
+              <span>+998</span>
+              <input type="text" id="phone" placeholder="">
+            </div>
+          </div>
+          <div class="input-group">
 
-                    <label for="parol">*parol</label>
-                    <div class="input-container">
-                        <input type="text" id="palor" placeholder="">
-                    </div>
-                </div>
-                <button class="modal-button">Kirish</button>
+            <label for="parol">*parol</label>
+            <div class="input-container">
+              <input type="text" id="palor" placeholder="">
+            </div>
+          </div>
+          <button class="modal-button">Kirish</button>
 
-            </form>
-        </div>
+        </form>
+      </div>
     </div>
 
     <div id="royxatdon-modal" class="kirish-modal">
-        <div class="kirish-modal-content">
-            <a href="#" class="close-btn">
-                &times;
-                <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
-            </a>
-            <h1>Ro’yxatdan o’tish</h1>
-            <h2>Akkountingiz bormi ?<a href="#kirish-modal">Kirish</a></h2>
-            <!-- form -->
-            <form class="modal-form">
-                <div class="input-group">
-                    <label for="phone">*telefon raqam</label>
-                    <div class="input-container">
-                        <span>+998</span>
-                        <input type="text" id="phone" placeholder="Enter phone number">
-                    </div>
-                </div>
-                <a class="modal-button" href="#tasdiqlash-modal">
-                    Davom etish
-                </a>
-            </form>
-        </div>
+      <div class="kirish-modal-content">
+        <a href="#" class="close-btn">
+          &times;
+          <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+        </a>
+        <h1>Ro’yxatdan o’tish</h1>
+        <h2>Akkountingiz bormi ?<a href="#kirish-modal">Kirish</a></h2>
+        <!-- form -->
+        <form class="modal-form">
+          <div class="input-group">
+            <label for="phone">*telefon raqam</label>
+            <div class="input-container">
+              <span>+998</span>
+              <input type="text" id="phone" placeholder="Enter phone number">
+            </div>
+          </div>
+          <a class="modal-button" href="#tasdiqlash-modal">
+            Davom etish
+          </a>
+        </form>
+      </div>
     </div>
 
     <div id="tasdiqlash-modal" class="kirish-modal">
-        <div class="kirish-modal-content">
-            <a href="#" class="close-btn">
-                &times;
-                <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
-            </a>
-            <h1>Tasdiqlash kodini kiriting</h1>
-            <!-- form -->
-            <form class="modal-form">
-                <div class="input-group">
+      <div class="kirish-modal-content">
+        <a href="#" class="close-btn">
+          &times;
+          <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
+        </a>
+        <h1>Tasdiqlash kodini kiriting</h1>
+        <!-- form -->
+        <form class="modal-form">
+          <div class="input-group">
 
-                    <div class="input-container">
-                        <input type="password" id="passcode" placeholder="">
-                    </div>
-                    
-                </div>
-                <a href="#last-modal" class="modal-button">Tasdiqlash</a>
-            </form>
-        </div>
+            <div class="input-container">
+              <input type="password" id="passcode" placeholder="">
+            </div>
+
+          </div>
+          <a href="#last-modal" class="modal-button">Tasdiqlash</a>
+        </form>
+      </div>
     </div>
-    
+
     <div id="last-modal" class="kirish-modal">
-        <div class="kirish-modal-content">
-            <a href="#" class="close-btn">
-                &times;
-            </a>
-            <h1>Ro’yxatdan o’tish</h1>
-            <!-- form -->
-            <form class="modal-form">
-                <div class="input-group">
+      <div class="kirish-modal-content">
+        <a href="#" class="close-btn">
+          &times;
+        </a>
+        <h1>Ro’yxatdan o’tish</h1>
+        <!-- form -->
+        <form class="modal-form">
+          <div class="input-group">
 
-                    <div class="input-group">
+            <div class="input-group">
 
-                        <label for="phone">*Ismingiz</label>
-                        <div class="input-container">
-                            <input type="text" id="palor" placeholder="">
-                        </div>
-                    </div>
-                    <div class="input-group">
+              <label for="phone">*Ismingiz</label>
+              <div class="input-container">
+                <input type="text" id="palor" placeholder="">
+              </div>
+            </div>
+            <div class="input-group">
 
-                        <label for="parol">*Familiyangiz</label>
-                        <div class="input-container">
-                            <input type="text" id="palor" placeholder="">
-                        </div>
-                    </div>
-                    <div class="input-group">
+              <label for="parol">*Familiyangiz</label>
+              <div class="input-container">
+                <input type="text" id="palor" placeholder="">
+              </div>
+            </div>
+            <div class="input-group">
 
-                        <label for="phone">*Parol</label>
-                        <div class="input-container">
-                            <input type="text" id="palor" placeholder="">
-                        </div>
-                    </div>
-                    <div class="input-group">
+              <label for="phone">*Parol</label>
+              <div class="input-container">
+                <input type="text" id="palor" placeholder="">
+              </div>
+            </div>
+            <div class="input-group">
 
-                        <label for="parol">*Parolni tasdiqlang</label>
-                        <div class="input-container">
-                            <input type="text" id="palor" placeholder="">
-                        </div>
-                    </div>
-                </div>
-                <button class="modal-button">Yakunlash</button>
-            </form>
-        </div>
+              <label for="parol">*Parolni tasdiqlang</label>
+              <div class="input-container">
+                <input type="text" id="palor" placeholder="">
+              </div>
+            </div>
+          </div>
+          <a href="#" class="modal-button">Yakunlash</a>
+        </form>
+      </div>
     </div>
-</header>
+  </header>
 
 
   <div class="main-content-container container">
