@@ -669,12 +669,18 @@ div.input-container  {
 
 
 
-
+.menu-toggle{
+    display: none;
+}
 
 
 
 /* Responsive styling */
 @media (max-width: 768px) {
+    .menu-toggle{
+        display: block;
+    }
+
     .hero {
         background-size: cover;
         height: 60vh;
@@ -754,5 +760,11 @@ div.input-container  {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    footer > .container{
+        display: flex;
+        flex-direction: column;
+        
     }
 }
