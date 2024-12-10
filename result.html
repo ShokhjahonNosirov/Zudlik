@@ -48,432 +48,308 @@
       </nav>
     </div>
   </header>
-  <div class="container">
 
-    <!-- Modal -->
-    <div id="kirish-modal" class="kirish-modal">
-      <div class="kirish-modal-content">
-        <a href="#" class="close-btn">
-          &times;
-          <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
-        </a>
-        <h1>Kirish</h1>
-        <h2>Akkountingiz yo’qmi ? <a href="#royxatdon-modal">Ro’yxatdan o’tish</a></h2>
-        <!-- form -->
-        <form class="modal-form">
-          <div class="input-group">
-
-            <label for="phone">*telefon raqam</label>
-            <div class="input-container">
-              <span>+998</span>
-              <input type="text" id="phone" placeholder="">
-            </div>
-          </div>
-          <div class="input-group">
-
-            <label for="parol">*parol</label>
-            <div class="input-container">
-              <input type="text" id="palor" placeholder="">
-            </div>
-          </div>
-          <button class="modal-button">Kirish</button>
-
-        </form>
+    <div class="main-content-container container">
+      <div class="start-page container ">
+        <span class="filter-button">
+          <image src="static/pictures/filter.svg" alt="Filter" style="width: 15px; height: 15px;">
+            Saralash
+        </span>
+        <h1 class="results-title">Toshkent shahar - Zarafshon tuman bo'yicha natijalar</h1>
       </div>
-    </div>
-
-    <div id="royxatdon-modal" class="kirish-modal">
-      <div class="kirish-modal-content">
-        <a href="#" class="close-btn">
-          &times;
-          <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
-        </a>
-        <h1>Ro’yxatdan o’tish</h1>
-        <h2>Akkountingiz bormi ?<a href="#kirish-modal">Kirish</a></h2>
-        <!-- form -->
-        <form class="modal-form">
-          <div class="input-group">
-            <label for="phone">*telefon raqam</label>
-            <div class="input-container">
-              <span>+998</span>
-              <input type="text" id="phone" placeholder="Enter phone number">
-            </div>
-          </div>
-          <a class="modal-button" href="#tasdiqlash-modal">
-            Davom etish
-          </a>
-        </form>
-      </div>
-    </div>
-
-    <div id="tasdiqlash-modal" class="kirish-modal">
-      <div class="kirish-modal-content">
-        <a href="#" class="close-btn">
-          &times;
-          <!-- <img width="15px" height="30px" src="static/pictures/modal/x.svg" alt="close-button"> -->
-        </a>
-        <h1>Tasdiqlash kodini kiriting</h1>
-        <!-- form -->
-        <form class="modal-form">
-          <div class="input-group">
-
-            <div class="input-container">
-              <input type="password" id="passcode" placeholder="">
-            </div>
-
-          </div>
-          <a href="#last-modal" class="modal-button">Tasdiqlash</a>
-        </form>
-      </div>
-    </div>
-
-    <div id="last-modal" class="kirish-modal">
-      <div class="kirish-modal-content">
-        <a href="#" class="close-btn">
-          &times;
-        </a>
-        <h1>Ro’yxatdan o’tish</h1>
-        <!-- form -->
-        <form class="modal-form">
-          <div class="input-group">
-
-            <div class="input-group">
-
-              <label for="phone">*Ismingiz</label>
-              <div class="input-container">
-                <input type="text" id="palor" placeholder="">
-              </div>
-            </div>
-            <div class="input-group">
-
-              <label for="parol">*Familiyangiz</label>
-              <div class="input-container">
-                <input type="text" id="palor" placeholder="">
-              </div>
-            </div>
-            <div class="input-group">
-
-              <label for="phone">*Parol</label>
-              <div class="input-container">
-                <input type="text" id="palor" placeholder="">
-              </div>
-            </div>
-            <div class="input-group">
-
-              <label for="parol">*Parolni tasdiqlang</label>
-              <div class="input-container">
-                <input type="text" id="palor" placeholder="">
-              </div>
-            </div>
-          </div>
-          <a href="#" class="modal-button">Yakunlash</a>
-        </form>
-      </div>
-    </div>
-  </header>
-
-
-  <div class="main-content-container container">
-    <div class="start-page container ">
-      <span class="filter-button">
-        <image src="static/pictures/filter.svg" alt="Filter" style="width: 15px; height: 15px;">
-          Saralash
+      <span class="results-count">
+        <image src="static/pictures/calendar.svg" alt="Calendar" style="width: 15px; height: 15px;">
+          10-senyabr
       </span>
-      <h1 class="results-title">Toshkent shahar - Zarafshon tuman bo'yicha natijalar</h1>
-    </div>
-    <span class="results-count">
-      <image src="static/pictures/calendar.svg" alt="Calendar" style="width: 15px; height: 15px;">
-        10-senyabr
-    </span>
 
 
-    <div class=" main-content container mt-5">
-      <!-- Card 1 -->
-      <div class="card-custom d-flex align-items-center justify-content-between">
-        <!-- Column 1: Driver Image -->
-        <div class="column-1">
-          <img src="static/pictures/userResult.png" alt="Driver" class="user-image" style="width: 95px; height: 95px">
-        </div>
-
-        <!-- Column 2: Driver Name and Car -->
-        <div class="column-2 d-flex flex-column">
-          <div class="driver-name">
-            Shoxjahon <span class="rating">⭐ 4.8</span>
+      <div class=" main-content container mt-5">
+        <!-- Card 1 -->
+        <div class="card-custom d-flex align-items-center justify-content-between">
+          <!-- Column 1: Driver Image -->
+          <div class="column-1">
+            <img src="static/pictures/userResult.png" alt="Driver" class="user-image" style="width: 95px; height: 95px">
           </div>
-          <div>Lacetti 01 H234GH</div>
-        </div>
 
-        <!-- Column 3: Time and Passenger Info -->
-        <div class="column-3 d-flex flex-column text-center">
-          <div class="time">10:00</div>
-          <div>3 kishi</div>
-        </div>
-
-        <!-- Column 4: Price Info -->
-        <div class="column-4 d-flex flex-column text-center">
-          <div class="price">40,000 so'm</div>
-          <div><span>97 900 80 18</span>
-            <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
-          </div>
-        </div>
-
-        <!-- Column 5: Locations -->
-        <div class="column-5 d-flex flex-column text-left">
-          <div>
-            <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-              Toshkent sh. Sobir Rahimov
-          </div>
-          <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-            <div>
-              <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-                Navoiy sh. Karmana stoyanka
+          <!-- Column 2: Driver Name and Car -->
+          <div class="column-2 d-flex flex-column">
+            <div class="driver-name">
+              Shoxjahon <span class="rating">⭐ 4.8</span>
             </div>
-        </div>
-
-        <!-- Join Button -->
-        <button class="btn btn-join btn-custom">Joy Olish</button>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="card-custom d-flex align-items-center justify-content-between">
-        <!-- Column 1: Driver Image -->
-        <div class="column-1">
-          <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
-        </div>
-
-        <!-- Column 2: Driver Name and Car -->
-        <div class="column-2 d-flex flex-column">
-          <div class="driver-name">
-            Shoxjahon <span class="rating">⭐ 4.8</span>
+            <div>Lacetti 01 H234GH</div>
           </div>
-          <div>Lacetti 01 H234GH</div>
-        </div>
 
-        <!-- Column 3: Time and Passenger Info -->
-        <div class="column-3 d-flex flex-column text-center">
-          <div class="time">10:00</div>
-          <div>3 kishi</div>
-        </div>
-
-        <!-- Column 4: Price Info -->
-        <div class="column-4 d-flex flex-column text-center">
-          <div class="price">40,000 so'm</div>
-          <div><span>97 900 80 18</span>
-            <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
+          <!-- Column 3: Time and Passenger Info -->
+          <div class="column-3 d-flex flex-column text-center">
+            <div class="time">10:00</div>
+            <div>3 kishi</div>
           </div>
-        </div>
 
-        <!-- Column 5: Locations -->
-        <div class="column-5 d-flex flex-column text-left">
-          <div>
-            <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-              Toshkent sh. Sobir Rahimov
-          </div>
-          <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-            <div>
-              <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-                Navoiy sh. Karmana stoyanka
+          <!-- Column 4: Price Info -->
+          <div class="column-4 d-flex flex-column text-center">
+            <div class="price">40,000 so'm</div>
+            <div><span>97 900 80 18</span>
+              <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
             </div>
-        </div>
-
-        <div class="button-group">
-          <!-- Cancel Button -->
-          <button class="btn btn-cancel btn-custom">Bekor qilish</button>
-
-          <!-- Status Message -->
-          <div class="status-cancel">
-            * Siz so'rov yubordingiz javobini kuting!
           </div>
-        </div>
-      </div>
 
-
-      <!-- Card 3 -->
-      <div class="card-custom d-flex align-items-center justify-content-between">
-        <!-- Column 1: Driver Image -->
-        <div class="column-1">
-          <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
-        </div>
-
-        <!-- Column 2: Driver Name and Car -->
-        <div class="column-2 d-flex flex-column">
-          <div class="driver-name">
-            Shoxjahon <span class="rating">⭐ 4.8</span>
-          </div>
-          <div>Lacetti 01 H234GH</div>
-        </div>
-
-        <!-- Column 3: Time and Passenger Info -->
-        <div class="column-3 d-flex flex-column text-center">
-          <div class="time">10:00</div>
-          <div>3 kishi</div>
-        </div>
-
-        <!-- Column 4: Price Info -->
-        <div class="column-4 d-flex flex-column text-center">
-          <div class="price">40,000 so'm</div>
-          <div><span>97 900 80 18</span>
-            <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
-          </div>
-        </div>
-
-        <!-- Column 5: Locations -->
-        <div class="column-5 d-flex flex-column text-left">
-          <div>
-            <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-              Toshkent sh. Sobir Rahimov
-          </div>
-          <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+          <!-- Column 5: Locations -->
+          <div class="column-5 d-flex flex-column text-left">
             <div>
-              <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-                Navoiy sh. Karmana stoyanka
+              <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                Toshkent sh. Sobir Rahimov
             </div>
+            <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+              <div>
+                <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                  Navoiy sh. Karmana stoyanka
+              </div>
+          </div>
+
+          <!-- Join Button -->
+          <button class="btn btn-join btn-custom">Joy Olish</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-custom d-flex align-items-center justify-content-between">
+          <!-- Column 1: Driver Image -->
+          <div class="column-1">
+            <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
+          </div>
+
+          <!-- Column 2: Driver Name and Car -->
+          <div class="column-2 d-flex flex-column">
+            <div class="driver-name">
+              Shoxjahon <span class="rating">⭐ 4.8</span>
+            </div>
+            <div>Lacetti 01 H234GH</div>
+          </div>
+
+          <!-- Column 3: Time and Passenger Info -->
+          <div class="column-3 d-flex flex-column text-center">
+            <div class="time">10:00</div>
+            <div>3 kishi</div>
+          </div>
+
+          <!-- Column 4: Price Info -->
+          <div class="column-4 d-flex flex-column text-center">
+            <div class="price">40,000 so'm</div>
+            <div><span>97 900 80 18</span>
+              <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
+            </div>
+          </div>
+
+          <!-- Column 5: Locations -->
+          <div class="column-5 d-flex flex-column text-left">
+            <div>
+              <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                Toshkent sh. Sobir Rahimov
+            </div>
+            <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+              <div>
+                <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                  Navoiy sh. Karmana stoyanka
+              </div>
+          </div>
+
+          <div class="button-group">
+            <!-- Cancel Button -->
+            <button class="btn btn-cancel btn-custom">Bekor qilish</button>
+
+            <!-- Status Message -->
+            <div class="status-cancel">
+              * Siz so'rov yubordingiz javobini kuting!
+            </div>
+          </div>
         </div>
 
 
-        <!-- Accept Button -->
-        <div class="button-group flex-center-prop">
-          <!-- Status Message -->
-          <div class="status-label status-accepted text-success" style="margin: 0 auto; max-width: min-content;">
-            Tanlandi
+        <!-- Card 3 -->
+        <div class="card-custom d-flex align-items-center justify-content-between">
+          <!-- Column 1: Driver Image -->
+          <div class="column-1">
+            <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
           </div>
+
+          <!-- Column 2: Driver Name and Car -->
+          <div class="column-2 d-flex flex-column">
+            <div class="driver-name">
+              Shoxjahon <span class="rating">⭐ 4.8</span>
+            </div>
+            <div>Lacetti 01 H234GH</div>
+          </div>
+
+          <!-- Column 3: Time and Passenger Info -->
+          <div class="column-3 d-flex flex-column text-center">
+            <div class="time">10:00</div>
+            <div>3 kishi</div>
+          </div>
+
+          <!-- Column 4: Price Info -->
+          <div class="column-4 d-flex flex-column text-center">
+            <div class="price">40,000 so'm</div>
+            <div><span>97 900 80 18</span>
+              <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
+            </div>
+          </div>
+
+          <!-- Column 5: Locations -->
+          <div class="column-5 d-flex flex-column text-left">
+            <div>
+              <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                Toshkent sh. Sobir Rahimov
+            </div>
+            <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+              <div>
+                <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                  Navoiy sh. Karmana stoyanka
+              </div>
+          </div>
+
 
           <!-- Accept Button -->
-          <button class="btn btn-accept btn-custom" onclick="window.location.href='order.html';">Buyurtmalarga
-            o'tish</button>
+          <div class="button-group flex-center-prop">
+            <!-- Status Message -->
+            <div class="status-label status-accepted text-success" style="margin: 0 auto; max-width: min-content;">
+              Tanlandi
+            </div>
+
+            <!-- Accept Button -->
+            <button class="btn btn-accept btn-custom" onclick="window.location.href='order.html';">Buyurtmalarga
+              o'tish</button>
+          </div>
+
         </div>
 
+
+        <!-- Card 4 -->
+        <div class="card-custom d-flex align-items-center justify-content-between">
+          <!-- Column 1: Driver Image -->
+          <div class="column-1">
+            <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
+          </div>
+
+          <!-- Column 2: Driver Name and Car -->
+          <div class="column-2 d-flex flex-column">
+            <div class="driver-name">
+              Shoxjahon <span class="rating">⭐ 4.8</span>
+            </div>
+            <div>Lacetti 01 H234GH</div>
+          </div>
+
+          <!-- Column 3: Time and Passenger Info -->
+          <div class="column-3 d-flex flex-column text-center">
+            <div class="time">10:00</div>
+            <div>3 kishi</div>
+          </div>
+
+          <!-- Column 4: Price Info -->
+          <div class="column-4 d-flex flex-column text-center">
+            <div class="price">40,000 so'm</div>
+            <div><span>97 900 80 18</span>
+              <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
+            </div>
+          </div>
+
+          <!-- Column 5: Locations -->
+          <div class="column-5 d-flex flex-column text-left">
+            <div>
+              <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                Toshkent sh. Sobir Rahimov
+            </div>
+            <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+              <div>
+                <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                  Navoiy sh. Karmana stoyanka
+              </div>
+          </div>
+
+          <!-- Join Button -->
+          <button class="btn btn-join btn-custom">Joy Olish</button>
+        </div>
+
+        <!-- Card 5-->
+        <div class="card-custom d-flex align-items-center justify-content-between">
+          <!-- Column 1: Driver Image -->
+          <div class="column-1">
+            <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
+          </div>
+
+          <!-- Column 2: Driver Name and Car -->
+          <div class="column-2 d-flex flex-column">
+            <div class="driver-name">
+              Shoxjahon <span class="rating">⭐ 4.8</span>
+            </div>
+            <div>Lacetti 01 H234GH</div>
+          </div>
+
+          <!-- Column 3: Time and Passenger Info -->
+          <div class="column-3 d-flex flex-column text-center">
+            <div class="time">10:00</div>
+            <div>3 kishi</div>
+          </div>
+
+          <!-- Column 4: Price Info -->
+          <div class="column-4 d-flex flex-column text-center">
+            <div class="price">40,000 so'm</div>
+            <div><span>97 900 80 18</span>
+              <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
+            </div>
+          </div>
+
+          <!-- Column 5: Locations -->
+          <div class="column-5 d-flex flex-column text-left">
+            <div>
+              <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                Toshkent sh. Sobir Rahimov
+            </div>
+            <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+              <div>
+                <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
+                  Navoiy sh. Karmana stoyanka
+              </div>
+          </div>
+
+          <!-- Join Button -->
+          <button class="btn btn-join btn-custom">Joy Olish</button>
+        </div>
       </div>
 
 
-      <!-- Card 4 -->
-      <div class="card-custom d-flex align-items-center justify-content-between">
-        <!-- Column 1: Driver Image -->
-        <div class="column-1">
-          <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
-        </div>
 
-        <!-- Column 2: Driver Name and Car -->
-        <div class="column-2 d-flex flex-column">
-          <div class="driver-name">
-            Shoxjahon <span class="rating">⭐ 4.8</span>
-          </div>
-          <div>Lacetti 01 H234GH</div>
-        </div>
-
-        <!-- Column 3: Time and Passenger Info -->
-        <div class="column-3 d-flex flex-column text-center">
-          <div class="time">10:00</div>
-          <div>3 kishi</div>
-        </div>
-
-        <!-- Column 4: Price Info -->
-        <div class="column-4 d-flex flex-column text-center">
-          <div class="price">40,000 so'm</div>
-          <div><span>97 900 80 18</span>
-            <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
-          </div>
-        </div>
-
-        <!-- Column 5: Locations -->
-        <div class="column-5 d-flex flex-column text-left">
-          <div>
-            <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-              Toshkent sh. Sobir Rahimov
-          </div>
-          <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-            <div>
-              <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-                Navoiy sh. Karmana stoyanka
-            </div>
-        </div>
-
-        <!-- Join Button -->
-        <button class="btn btn-join btn-custom">Joy Olish</button>
-      </div>
-
-      <!-- Card 5-->
-      <div class="card-custom d-flex align-items-center justify-content-between">
-        <!-- Column 1: Driver Image -->
-        <div class="column-1">
-          <img src="static/pictures/userResult.png" alt="Driver" class="user-image">
-        </div>
-
-        <!-- Column 2: Driver Name and Car -->
-        <div class="column-2 d-flex flex-column">
-          <div class="driver-name">
-            Shoxjahon <span class="rating">⭐ 4.8</span>
-          </div>
-          <div>Lacetti 01 H234GH</div>
-        </div>
-
-        <!-- Column 3: Time and Passenger Info -->
-        <div class="column-3 d-flex flex-column text-center">
-          <div class="time">10:00</div>
-          <div>3 kishi</div>
-        </div>
-
-        <!-- Column 4: Price Info -->
-        <div class="column-4 d-flex flex-column text-center">
-          <div class="price">40,000 so'm</div>
-          <div><span>97 900 80 18</span>
-            <image src="static/pictures/result/copy-icon.svg" alt="copy" style="width: 15px; height: 15px;">
-          </div>
-        </div>
-
-        <!-- Column 5: Locations -->
-        <div class="column-5 d-flex flex-column text-left">
-          <div>
-            <image src="static/pictures/result/pin-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-              Toshkent sh. Sobir Rahimov
-          </div>
-          <image src="static/pictures/result/dot-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-            <div>
-              <image src="static/pictures/result/arrow-icon.svg" alt="Location" style="width: 15px; height: 15px;">
-                Navoiy sh. Karmana stoyanka
-            </div>
-        </div>
-
-        <!-- Join Button -->
-        <button class="btn btn-join btn-custom">Joy Olish</button>
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">Keyingi</button>
       </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="text-center py-5">
 
 
-    <div class="pagination">
-      <button class="page-btn active">1</button>
-      <button class="page-btn">2</button>
-      <button class="page-btn">Keyingi</button>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="text-center py-5">
-
-
-    <div class="container">
-      <!-- <div class="row">
+      <div class="container">
+        <!-- <div class="row">
             <div class="col-md-4 text-left">
                 <span class="footer-brand">ZudLik</span>
             </div> -->
-      <div class="text-center">
-        <div class="footer-icons">
-          <p>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-          </p>
+        <div class="text-center">
+          <div class="footer-icons">
+            <p>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </p>
+          </div>
+          &copy; 2024 Copyright ZudLik Group
         </div>
-        &copy; 2024 Copyright ZudLik Group
-      </div>
-      <!-- <div class="col-md-4 text-right">
+        <!-- <div class="col-md-4 text-right">
             </div> -->
-    </div>
+      </div>
 
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="static/js/scripts.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/scripts.js"></script>
 </body>
 
 </html>
